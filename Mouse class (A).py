@@ -17,7 +17,7 @@ class Mouse:
             [0, 0, 0, 1],
         ] 
         self.motor = StepperMotor([5, 6, 7, 8], step_seq)
-        self.ultrasonic = UltrasonicSensor(trigger_pin = 20, echo_pin = 21) 
+        self.ultrasonic = UltrasonicSensor(trigger_pin = 4, echo_pin = 3) 
         self.piezo = PiezoSensor(pin_number = 15)
     def run(self):
         while True:
